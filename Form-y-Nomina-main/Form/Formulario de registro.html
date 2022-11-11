@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Imagen.css">
+  <h1>NN</h1>
+</head>
+<body>
+  <form action.href="Formulario de registro.html" target="_blank" accept-charset="utf-8">
+    <fieldset>
+      <legend>Crear cuenta</legend>
+      <label for="nombre">Nombres:</label><br>
+      <input required autofocus type="text" maxlength="30" pattern="[A-Za-z ]{}" title="Ingrese su(s) nombre(s)" id="nombre" name="nombre" style="WIDTH: 500px; HEIGHT: 20px"><br><br>
+      
+      <label for="apellido">Apellidos:</label><br>
+      <input required autofocus type="text" maxlength="30" pattern="[A-Za-z ]{}" title="Ingrese su(s) apellido(s)" id="apellido" name="apellido"><br><br>
+      
+      <label for="TpDocumento">Tipo de Documento:</label><br>
+      <select name="TpDocumento">
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="RC">Registro Civil</option>
+        <option value="PS">Pasaporte</option>
+        <option value="TE">Tarjeta de Extranjería</option>
+        <option value="CE">Cédula de Extranjería</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="Documento">Documento:</label><br>
+      <input required autofocus type="text" minlength="5" maxlength="20" pattern="[A-Za-z1-9 ]{}" title="Ingrese su numero de Documento" id="documento" name="documento"><br><br>
+      
+      <label for="correo">Correo:</label><br>
+      <input required type="email" title="Ingrese su correo electronico" id="correo" name="correo"><br><br>
+      
+      <label for="contraseña">Contraseña:</label><br>
+      <input required type="password" minlength="8" maxlength="30" pattern="[A-Za-z1-9 ]{}" title="Ingrese mínimo 8 caracteres" id="contraseña1" name="contraseña1"><br><br>
+      <label for="contraseña">Confirmar contraseña:</label><br>
+      <input required type="password" minlength="8" maxlength="30" pattern="[A-Za-z1-9 ]{}" title="Ingrese mínimo 8 caracteres" id="contraseña2" name="contraseña2"><br><br>
+    
+      <label for="Ciudad">Ciudad:</label><br>
+      <input required type="text" id="ciudad" name="Ciudad donde recide" title="Ingrese la ciudad donde vive" pattern="[A-Za-z ]{}"><br><br>
+
+      <label for="Direccion">Direccion:</label><br>
+      <input required type="text" id="direccion" name="Dirrecion" title="Ingrese su direccion de vivienda"><br><br>
+
+      <label for="telefono">Numero de telefono:</label><br>
+      <input required type="tel" id="numero" name="numero de telefono" pattern="[0-9 ]{}" title="Ingrese su numero de telefono" minlength="10" maxlength="10"><br><br>
+
+      <label for="Fecha de nacimiento">Fecha de nacimiento:</label><br>
+      <input required type="date" id="fecha" name="fechanacimiento"><br><br>
+
+
+      <label for="cb">Acepto terminos y condiciones</label><br>
+      <div id="checkbox">
+        <input required type="checkbox" name="cb">
+      </div>
+
+      
+
+      <hr>
+      <button id ="enviar" type="submit">Enviar Datos</button>
+      <hr>
+    </fieldset>
+  </form> 
+  
+  <br>
+  <br>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="java/ValContra.js"></script>
+  
+</body>
+</html>
