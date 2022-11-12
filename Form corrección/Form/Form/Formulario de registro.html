@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Imagen.css">
+</head>
+<body>
+  <h1>NN</h1>
+  <form action.href="Formulario de registro.html" target="_blank" accept-charset="utf-8">
+    <fieldset>
+      <legend>Crear cuenta</legend>
+      <label for="nombre">Nombres:</label><br>
+      <input autofocus type="text" pattern="[A-Za-z ]{1,30}" title="Ingrese su(s) nombre(s)" id="nombre" name="nombre" style="WIDTH: 500px; HEIGHT: 20px" required><br><br>
+      
+      <label for="apellido">Apellidos:</label><br>
+      <input type="text" pattern="[A-Za-z ]{1,30}" title="Ingrese su(s) apellido(s)" id="apellido" name="apellido" required><br><br>
+      
+      <label for="TpDocumento">Tipo de Documento:</label><br>
+      <select name="TpDocumento">
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="RC">Registro Civil</option>
+        <option value="PS">Pasaporte</option>
+        <option value="TE">Tarjeta de Extranjería</option>
+        <option value="CE">Cédula de Extranjería</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="Documento">Documento:</label><br>
+      <input type="text" pattern="[A-Za-z0-9@ ]{5,20}" title="Ingrese su numero de Documento" id="documento" name="documento" required><br><br>
+      
+      <label for="correo">Correo:</label><br>
+      <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Ingrese su correo electronico" id="correo" name="correo" required><br><br>
+  
+      <label for="contraseña">Contraseña:</label><br>
+      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30}" title="Ingrese mínimo 8 caracteres" id="contraseña1" name="contraseña1" required><br><br>
+      <label for="contraseña">Confirmar contraseña:</label><br>
+      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30}" title="Ingrese mínimo 8 caracteres" id="contraseña2" name="contraseña2" required><br><br>
+    
+      <label for="Ciudad">Ciudad:</label><br>
+      <select class="form-control" id="inputCiudadLine2">
+        <option value="Arauca">Arauca</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Bogotá" selected>Bogotá</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Cali">Cali</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Cúcuta">Cúcuta</option>
+        <option value="Florencia">Florencia</option>
+        <option value="Ibagué">Ibagué</option>
+        <option value="Leticia">Leticia</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Mitú">Mitú</option>
+        <option value="Mocoa">Mocoa</option>
+        <option value="Montería">Montería</option>
+        <option value="Neiva">Neiva</option>
+        <option value="Pasto">Pasto</option>
+        <option value="Pereira">Pereira</option>
+        <option value="Popayán">Popayán</option>
+        <option value="Puerto Carreño">Puerto Carreño</option>
+        <option value="Puerto Inírida">Puerto Inírida</option>
+        <option value="Quibdó">Quibdó</option>
+        <option value="Riohacha">Riohacha</option>
+        <option value="San Andrés">San Andrés</option>
+        <option value="San José del Guaviare">San José del Guaviare</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Tunja">Tunja</option>
+        <option value="Valledupar">Valledupar</option>
+        <option value="Villavicencio">Villavicencio</option>
+        <option value="Yopal">Yopal</option>
+    </select>
+
+    <br><br>
+    
+    <label for="Direccion">Direccion:</label><br>
+      <input type="text" id="direccion" name="Dirrecion" title="Ingrese su direccion de vivienda" required ><br><br>
+
+      <label for="telefono">Numero de telefono:</label><br>
+      <input type="tel" id="numero" name="numero de telefono" pattern="[0-9 ]{}" title="Ingrese su numero de telefono" minlength="10" maxlength="10" required><br><br>
+
+      <label for="Fecha de nacimiento">Fecha de nacimiento:</label><br>
+      <input type="date" id="fecha" name="fechanacimiento"required><br><br>
+
+
+      <label for="cb">Acepto terminos y condiciones</label><br>
+      <div id="checkbox">
+        <input required type="checkbox" name="cb">
+      </div>
+      <hr>
+      <button id ="enviar" type="submit">Enviar Datos</button>
+      <hr>
+    </fieldset>
+  </form>
+  <br><br> 
+</body>
+</html>
